@@ -1,0 +1,34 @@
+<resources>
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="app_name">ShivRana_Comp304_Assignment4</string>
+    <string name="Customer">Customer</string>
+    <string name="Admin">Admin</string>
+    <string name="FirstPageTitle">Log In</string>
+    <string name="usrName">User Name</string>
+    <string name="password">Password</string>
+    <string name="registratiom">Registration</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="address">Address</string>
+    <string name="postalCode">Postal Code</string>
+    <string name="Register">Register</string>
+    <string name="OrderTitle">Place your order here</string>
+    <string name="placeOrder">Place Order</string>
+    <string name="itemCategory">Category</string>
+    <string name="itemName">Product Name</string>
+    <string name="Quantity">Quantity</string>
+    <string name="orderSummary">Order Summary</string>
+    <string name="Price">Price</string>
+    <string name="checkorders">Your Orders</string>
+    <string name="orderCancel">Cancle Order</string>
+    <string name="ChangeOrder">Change Order</string>
+    <string name="status">Order Status</string>
+    <string name="changeStatus">Change Status</string>
+    <string name="login">Log In</string>
+</resources>

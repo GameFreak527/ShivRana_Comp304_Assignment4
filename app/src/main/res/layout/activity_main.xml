@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FirstPageTitle"/>
+
+    <RadioGroup
+        style="@style/Content"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usrRadioGrp"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Customer"
+            android:text="@string/Customer"/>
+
+        <RadioButton
+            android:id="@+id/Admin"
+            style="@style/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Admin" />
+    </RadioGroup>
+
+    <TableLayout
+        style="@style/Table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                style="@style/subContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usrName"/>
+
+            <EditText
+                android:id="@+id/usrNameTxtFIeld"
+                style="@style/subContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:text="admin1" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/subContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"/>
+
+            <EditText
+                android:id="@+id/usrPassTxtFIeld"
+                style="@style/subContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minWidth="100dp"
+                android:singleLine="true"
+                android:text="admin" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/logInBtn"
+            style="@style/Content"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:background="@drawable/login"/>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_toEndOf="@id/logInBtn"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/mainRegistrationBtn"
+            style="@style/Content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/loginTextView"
+            android:background="@drawable/register"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mainRegistrationBtn"
+            android:text="@string/registratiom"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
